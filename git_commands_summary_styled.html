@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підсумок команд Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #333;
+            color: #f4f7fc;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        li:hover {
+            background-color: #e0f7fa;
+        }
+        .command {
+            font-weight: bold;
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Підсумок основних команд Git</h1>
+        <ul>
+            <li>
+                <h2>1. Перевірка поточної гілки</h2>
+                <pre><span class="command">git branch</span></pre>
+            </li>
+            <li>
+                <h2>2. Перемикання між гілками</h2>
+                <pre><span class="command">git checkout master</span></pre>
+                <pre><span class="command">git checkout main</span></pre>
+            </li>
+            <li>
+                <h2>3. Створення нової гілки</h2>
+                <pre><span class="command">git checkout -b feature/new-project</span></pre>
+            </li>
+            <li>
+                <h2>4. Додавання файлів до Git</h2>
+                <pre><span class="command">git add .</span></pre>
+            </li>
+            <li>
+                <h2>5. Зробити коміт</h2>
+                <pre><span class="command">git commit -m "Додав нові файли для проекту"</span></pre>
+            </li>
+            <li>
+                <h2>6. Перегляд історії комітів</h2>
+                <pre><span class="command">git log</span></pre>
+            </li>
+            <li>
+                <h2>7. Відправка змін на GitHub</h2>
+                <pre><span class="command">git push -u origin feature/new-project</span></pre>
+            </li>
+            <li>
+                <h2>8. Перевірка статусу файлів</h2>
+                <pre><span class="command">git status</span></pre>
+            </li>
+            <li>
+                <h2>9. Злиття гілок</h2>
+                <pre><span class="command">git merge feature/new-project</span></pre>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
