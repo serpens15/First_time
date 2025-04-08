@@ -1,0 +1,25 @@
+# ОС
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
+
+# build
+dist/
+build/
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# logs
+logs
+*.log
