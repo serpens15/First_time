@@ -4,24 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #555;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 20px 10px;
+            margin: 20px 0;
+        }
+        button {
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            gap: 50px;
+        }
+        .header nav ul {
+            display: flex;
+            gap: 20px;
+        }
+        .submitButton {
+            background-color: #333;
+            color: #fff;
+        }
+        .submitButton:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img src="https://images.pexels.com/photos/7454367/pexels-photo-7454367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="50" alt="Логотип сайту">
+
         <nav>
             <ul>
-                <li><a href="#">Про себе</a></li>
-                <li><a href="#">Проекти</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#about">Про себе</a></li>
+                <li><a href="#projects">Проекти</a></li>
+                <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+
     </header>
     
-    <section>
+    <section id="about" class="about">
         <h2>Секція Про себе</h2>
-        <p></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, fugiat.</p>
     </section>
 
-    <section>
+    <section id="projects" class="projects">
         <h2>Проекти</h2>
         <ul>
             <li>Проект 1</li>
@@ -30,7 +91,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="contacts" class="contacts">
         <h2>Контакти</h2>
 
         <form action="#">
@@ -38,7 +99,7 @@
             <input type="email" name="email" id="email" placeholder="Ваш email">
 
             <textarea name="message" id="message" placeholder="Ваше повідомлення"></textarea>
-
+            <button type="submit" class="submitButton">Надіслати</button>
         </form>
     </section>
 
