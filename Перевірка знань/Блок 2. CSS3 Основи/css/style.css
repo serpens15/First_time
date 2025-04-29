@@ -1,0 +1,133 @@
+/* Плавна навігація */
+html {
+    scroll-behavior: smooth;
+}
+/* Розширене обнулення стилів */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* контейнер для блоків */
+.container {
+  padding: 10px 10px 25px 10px;
+}
+/* Logo */
+.logoImg {
+  height: 75px;
+  border: 3px solid #333;
+  border-radius: 20px;
+}
+/* Кнопка відправки */
+.submitButton {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.submitButton:hover {
+    background-color: #555;
+
+}
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/* Navigation */
+.navList{
+  display: flex;
+  gap: 15px;
+}
+/* navigation links */
+.navLink {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navLink:hover {
+  color: #555;
+}
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+.formItem {
+  border: 2px dotted #333;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+/* flexSquare */
+.flexBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.fxSquare {
+  border: 5px solid #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+.sq2 {
+  background-color: aquamarine;
+}
+.sq3 {
+  background-color: bisque;
+}
